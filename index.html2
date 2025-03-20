@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="resultado">
+            <script>
+                var produtos = prompt("Informe dois produtos (separados por vírgula):").toLowerCase();
+                var resultado = document.querySelector(".resultado");
+                var produtosArray = produtos.split(',');
+
+                produtosArray.forEach(function(produto) {
+                    produto = produto.trim();
+                    var produtoInfo = document.createElement('div');
+                    produtoInfo.classList.add('produto-info');
+
+                    switch (produto) {
+                        case "arroz":
+                            produtoInfo.classList.add("arroz");
+                            produtoInfo.innerHTML = "Você comprou arroz. Preço: 2 cruzeiros";
+                            break;
+            
+                        case "feijão":
+                            produtoInfo.classList.add("feijao");
+                            produtoInfo.innerHTML = "Você comprou feijão. Preço: 3 cruzeiros";
+                            break;
+            
+                        case "cafe":
+                            produtoInfo.classList.add("cafe");
+                            produtoInfo.innerHTML = "Você comprou café. Preço: 4 cruzeiros";
+                            break;
+            
+                        default:
+                            produtoInfo.classList.add("nao-encontrado");
+                            produtoInfo.innerHTML = "Produto não encontrado: " + produto;
+                            break;
+                    }
+
+                    resultado.appendChild(produtoInfo);
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>

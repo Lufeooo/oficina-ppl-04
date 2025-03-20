@@ -1,0 +1,54 @@
+
+h1{
+    width: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+   text-align: center;
+    
+    
+}
+.resultado{
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+ border: 5rem ;
+}
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: #f0f0f0;
+    display: flex;
+    border: 5px solid #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+h1{
+    left: 40%;
+    display: flex;
+    position: absolute;
+    top: auto;
+    font-size: 30px;
+}
+.arroz {
+    background-color: #f39c12;
+    border: 2px solid #e67e22;
+}
+
+.feijao {
+    background-color: #2ecc71;
+    border: 2px solid #27ae60;
+}
+
+.cafe {
+    background-color: #9b59b6;
+    border: 2px solid #8e44ad;
+}
+.produto-info {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
